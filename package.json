@@ -1,0 +1,17 @@
+{
+  "name": "graphql2",
+  "version": "1.0.0",
+  "description": "Practica GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Avila",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "graphql-server-express": "^1.4.1",
+    "pg-promise": "^10.3.2"
+  }
+}
