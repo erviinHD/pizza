@@ -1,0 +1,25 @@
+
+#TYPE SYSTEM
+# Int, String, Float, Boolean, ID
+
+type Pizza {
+    id:Int!
+    name:String!
+    origin:String
+    ingredients: [Ingredient]
+}
+
+type Ingredient {
+    id: Int!
+    name: String!
+    calories: String
+}
+
+# Definir Schema
+type Query {
+    pizzas (id:Int):[Pizza]
+    ingredients(id: Int ): [Ingredient]
+}    
+
+
+

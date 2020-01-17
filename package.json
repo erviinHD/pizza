@@ -1,17 +1,33 @@
 {
-  "name": "graphql2",
+  "name": "pizza",
   "version": "1.0.0",
-  "description": "Practica GraphQL",
+  "description": "Pizza clase Costruccion de Software",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js",
+    "start": "nodemon --exec babel-node index.js"
   },
-  "author": "Ricardo Avila",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erviinHD/pizza.git"
+  },
+  "author": "Ervin Cabascango",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erviinHD/pizza/issues"
+  },
+  "homepage": "https://github.com/erviinHD/pizza#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
     "express": "^4.17.1",
     "graphql": "^14.5.8",
+    "graphql-import": "^0.7.1",
     "graphql-server-express": "^1.4.1",
-    "pg-promise": "^10.3.2"
+    "graphql-tools": "^4.0.6",
+    "nodemon": "^2.0.2",
+    "pg-promise": "^10.3.5"
   }
 }
