@@ -21,5 +21,23 @@ type Query {
     ingredients(id: Int ): [Ingredient]
 }    
 
+input pizzaInput{
+    name:String!
+    origin:String
+    ingredients: [Int]
+}
+
+input pizzaUpdate {
+    id: Int!
+    name: String!
+    origin: String
+    ingredients: [Int]
+}
+
+# Mutacion
+type Mutation{
+    createPizza(pizza:pizzaInput): Pizza
+    updatePizza(pizza:pizzaUpdate): Pizza
+}
 
 
